@@ -1,8 +1,4 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import axios from "axios";
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [floor, setFloor] = useState(0);
@@ -23,7 +19,5 @@ export default function Home() {
     });
   };
 
-  return (
-    <div>degods:{floor}</div>
-  )
+  return <div>degods:{floor}</div>;
 }
